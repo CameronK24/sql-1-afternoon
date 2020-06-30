@@ -1,0 +1,191 @@
+-- create table person (
+-- 	id serial primary key,
+--   name text,
+--   age integer,
+--   height float,
+--   city text,
+--   favorite_color text
+-- );
+
+-- insert into person
+-- (name, age, height, city, favorite_color)
+-- values
+-- ('Coolio', 24, 192.024, 'Coolsville', 'Blue')
+
+-- insert into person
+-- (name, age, height, city, favorite_color)
+-- values
+-- ('Carlton', 19, 155.7528, 'Bell Air', 'Green')
+
+-- insert into person
+-- (name, age, height, city, favorite_color)
+-- values
+-- ('Cameron', 23, 182.88, 'Orem', 'Green')
+
+-- insert into person
+-- (name, age, height, city, favorite_color)
+-- values
+-- ('Bryan', 24, 188.976, 'Provo', 'Purple')
+
+-- insert into person
+-- (name, age, height, city, favorite_color)
+-- values
+-- ('Seven', 28, 185.928, 'Sandy', 'Yellow')
+
+-- select *
+-- from person
+-- order by height desc
+
+-- select *
+-- from person
+-- order by height asc
+
+-- select *
+-- from person
+-- order by age desc
+
+-- select *
+-- from person
+-- where age > 20;
+
+-- select *
+-- from person
+-- where age = 18;
+
+-- select *
+-- from person
+-- where age < 20
+-- or age > 30;
+
+-- select *
+-- from person
+-- where age != 27;
+
+-- select *
+-- from person
+-- where favorite_color != 'red';
+
+-- select *
+-- from person
+-- where favorite_color != 'Red'
+-- and favorite_color != 'Blue';
+
+-- select *
+-- from person
+-- where favorite_color = 'Orange'
+-- or favorite_color = 'Green';
+
+-- select *
+-- from person
+-- where favorite_color in ('Orange', 'Green', 'Blue');
+
+-- select *
+-- from person
+-- where favorite_color in ('Yellow', 'Purple');
+
+-- select * from person
+
+-- create table orders (
+-- 	order_id serial primary key,
+--   person_id integer,
+--   product_name text,
+--   product_price float,
+--   quantity integer
+-- );
+
+-- insert into orders 
+-- (person_id, product_name, product_price, quantity)
+-- values
+-- (114, 'Coca Cola Brothers', 9999.99, 54)
+
+-- insert into orders
+-- (person_id, product_name, product_price, quantity)
+-- values
+-- (356, 'Bobby Burgler', 4000.45, 2);
+
+-- insert into orders
+-- (person_id, product_name, product_price, quantity)
+-- values
+-- (156, 'Falcon Punch', 27, 1);
+
+-- insert into orders
+-- (person_id, product_name, product_price, quantity)
+-- values
+-- (648, 'Beeg Dunkey', 34.99, 645);
+
+-- insert into orders
+-- (person_id, product_name, product_price, quantity)
+-- values
+-- (789, 'Chungus', 420, 69);
+
+-- select * from orders;
+
+-- select sum(quantity)
+-- from orders;
+
+-- select sum(product_price * quantity)
+-- from orders;
+
+-- select sum(product_price * quantity)
+-- from orders
+-- where person_id = 114;
+
+-- insert into artist
+-- (name)
+-- values
+-- ('Alter Bridge');
+
+-- insert into artist
+-- (name)
+-- values
+-- ('Starset'), ('Slash');
+
+-- select * from artist;
+
+-- select * from artist
+-- order by name desc
+-- limit 10;
+
+-- select * from artist
+-- order by name asc
+-- limit 5;
+
+-- select * from artist
+-- where name like 'Black%';
+
+-- select * from artist
+-- where name like '%Black%';
+
+-- select first_name, last_name from employee
+-- where city = 'Calgary';
+
+-- select max(birth_date) from employee;
+
+-- select min(birth_date) from employee;
+
+-- select * from employee
+-- where reports_to = 2;
+
+-- select count(city) from employee
+-- where city = 'Lethbridge';
+
+-- select count(*) from invoice
+-- where billing_country = 'USA';
+
+-- select max(total) from invoice;
+
+-- select min(total) from invoice;
+
+-- select * from invoice
+-- where total > 5;
+
+-- select count(total) from invoice
+-- where total < 5;
+
+-- select count(*) from invoice
+-- where billing_state in ('CA', 'TX', 'AZ');
+
+-- select avg(total) from invoice;
+
+-- select sum(total) from invoice;
+ 
